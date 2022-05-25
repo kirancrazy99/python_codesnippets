@@ -1,0 +1,5 @@
+with open('D:/delete_blank_lines.txt') as reader, open('D:/delete_blank_lines.txt','r+') as writer:
+    for line in reader:
+        if line.strip():
+            writer.write(line)
+    writer.truncate()
