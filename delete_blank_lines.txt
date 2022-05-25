@@ -1,0 +1,4 @@
+Hi This is kiran kumar
+Using python to delete blank lines
+Okay, exitHi This is kiran kumar
+Hi This is kiran kumar
