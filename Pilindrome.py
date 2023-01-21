@@ -5,4 +5,4 @@ def is_pilindrome(string):
     else:
         print("Given string is not pilindrome")
 
-is_pilindrome("racecar")
+is_pilindrome("racecarr")
