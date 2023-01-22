@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-git-access', url: 'https://github.com/kirancrazy99/python_codesnippets.git']])
+            }
+        }
+        stage('Build'){
+            steps{
+                git credentialsId: 'jenkins-git-access', url: 'https://github.com/kirancrazy99/python_codesnippets.git'
+                bat 'python Pilindrome.py'
+            }
+        }
+        
+    }
+}
