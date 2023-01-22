@@ -1,3 +1,5 @@
+import sys
+
 def is_pilindrome(string):
     reverse=string[::-1]
     if string==reverse:
@@ -5,4 +7,6 @@ def is_pilindrome(string):
     else:
         print("Given string is not pilindrome")
 
-is_pilindrome("racecarr")
+        
+user_input = sys.argv[1]        
+is_pilindrome(user_input)
