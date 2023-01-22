@@ -11,3 +11,4 @@ def is_pilindrome(string):
         
 user_input = os.environ.get('user_input')    
 is_pilindrome(user_input)
+print(user_input)
