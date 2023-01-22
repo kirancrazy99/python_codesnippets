@@ -1,4 +1,5 @@
 import sys
+import os
 
 def is_pilindrome(string):
     reverse=string[::-1]
@@ -8,5 +9,5 @@ def is_pilindrome(string):
         print("Given string is not pilindrome")
 
         
-user_input = sys.argv[1]        
+user_input = os.environ.get('user_input')    
 is_pilindrome(user_input)
